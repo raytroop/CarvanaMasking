@@ -1,10 +1,10 @@
 {
-    "python.pythonPath": "/home/software/miniconda3/envs/tpt/bin/python",
+    "python.pythonPath": "/home/software/miniconda3/envs/tnn/bin/python",
     "files.watcherExclude": {
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
         "**/node_modules/**": true,
-        "**/data":true,
-        "**/experiments":true
+        "**/data/**": true,
+        "**/experiments/**": true
       }
 }
