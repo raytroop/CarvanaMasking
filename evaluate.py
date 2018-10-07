@@ -39,10 +39,10 @@ def evaluate(model, loss_fn, val_dataloader, metrics, params):
             labels_batch = labels_batch.data.cpu().numpy()
 
             # compute all metrics on this batch
-        summary_batch = {metric: metrics[metric](output_batch, labels_batch)
-                         for metric in metrics}
-        summary_batch['loss'] = loss.item()
-        summ.append(summary_batch)
+			summary_batch = {metric: metrics[metric](output_batch, labels_batch)
+        	                 for metric in metrics}
+        	summary_batch['loss'] = loss.item()
+        	summ.append(summary_batch)
 
         # compute mean of all metrics in summary
         metrics_mean = {metric:np.mean([x[metric] for x in summ]) for metric in summ[0]}
